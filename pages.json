@@ -6,6 +6,26 @@
 				"navigationBarTitleText": "首页"
 			}
 		},{
+			"path": "pages/goods/index",
+			"style": {
+				"navigationBarTitleText": "天猫超市"
+			}
+		},{
+			"path": "pages/contact/index",
+			"style": {
+				"navigationBarTitleText": "联系我们"
+			}
+		},{
+			"path": "pages/pics/index",
+			"style": {
+				"navigationBarTitleText": "社区图片"
+			}
+		},{
+			"path": "pages/videos/index",
+			"style": {
+				"navigationBarTitleText": "学习视频"
+			}
+		},{
 			"path": "pages/news/index",
 			"style": {
 				"navigationBarTitleText": "咨询"

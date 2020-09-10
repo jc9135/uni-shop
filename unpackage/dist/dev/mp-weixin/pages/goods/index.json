@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "天猫超市",
+  "usingComponents": {
+    "goods-list": "/compontents/goods-list/goods-list"
+  }
+}
