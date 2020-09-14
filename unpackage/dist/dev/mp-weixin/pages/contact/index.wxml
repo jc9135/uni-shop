@@ -1,1 +1,1 @@
-<view class="_div"></view>
+<view class="contact data-v-57bb4cfa"><image class="img data-v-57bb4cfa" src="http://www.itcast.cn/2018czydz/images/gywmban.jpg"></image><view class="info data-v-57bb4cfa"><view data-event-opts="{{[['tap',[['phone',['$event']]]]]}}" class="tellphone data-v-57bb4cfa" bindtap="__e">联系电话：400-100-9900（点击拨打）</view><view class="data-v-57bb4cfa">联系地址：北京市丰台区太平桥西里</view></view><map class="map data-v-57bb4cfa" name longitude="{{longitude}}" latitude="{{latitude}}" show-compass="true" markers="{{markers}}"></map></view>

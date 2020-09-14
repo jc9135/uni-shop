@@ -8,7 +8,8 @@
 		},{
 			"path": "pages/goods/index",
 			"style": {
-				"navigationBarTitleText": "天猫超市"
+				"navigationBarTitleText": "天猫超市",
+				"enablePullDownRefresh":true
 			}
 		},{
 			"path": "pages/contact/index",
