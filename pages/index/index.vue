@@ -16,7 +16,7 @@
 
 		<view class="hot_goods">
 			<view class="goods_title">推荐商品</view>
-			<goods-list :goodsList="goodsList"></goods-list>
+			<goods-list @goGoodsDetailClick="goGoodsDetail" :goodsList="goodsList"></goods-list>
 		</view>
 
 
@@ -77,6 +77,11 @@
 			goPath(path) {
 				uni.navigateTo({
 					url: path
+				})
+			},
+			goGoodsDetail (id) {
+				uni.navigateTo({
+					url:`/pages/goods-detail/index?id=${id}`
 				})
 			}
 		}

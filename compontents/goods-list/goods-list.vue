@@ -1,6 +1,6 @@
 <template>
 	<view class="goods_list">
-		<view class="goods_item" v-for="(item,index) in goodsList" :key="index">
+		<view class="goods_item" v-for="(item,index) in goodsList" :key="index" @click="navigator(item.id)">
 			<image :src="item.img_url" mode=""></image>
 			<view class="goods_price">
 				<text>￥{{item.sell_price}}</text>
@@ -16,6 +16,11 @@
 		props:{
 			goodsList:Array,
 			required:true
+		},
+		methods:{
+			navigator(id){
+				this.$emit('goGoodsDetailClick',id)
+			}
 		}
 	}
 </script>

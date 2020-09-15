@@ -9,7 +9,7 @@
 		<scroll-view  class="right" scroll-y>
 			<text v-if="rightList.length === 0" class="empty">暂无数据</text>
 			<view class="item" v-for="(item,index) in rightList" :key="index" v-else>
-				<image :src="item.img_url"></image>
+				<image @click="previewImg(item.img_url)" :src="item.img_url"></image>
 				<text>{{item.title}}</text>
 				<text selectable>{{item.zhaiyao}}</text>
 			</view>
@@ -47,6 +47,15 @@
 					url: `/api/getimages/${id}`
 				})
 				this.rightList = res.message;
+			},
+			previewImg(cur){
+				const urls = this.rightList.map(item=>{
+					return item.img_url
+				})
+				uni.previewImage({
+					current:cur,
+					urls:urls
+				})
 			}
 		}
 	}

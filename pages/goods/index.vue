@@ -1,6 +1,6 @@
 <template>
 	<view class="goods_list">
-		<goods-list :goodsList="goodsList"></goods-list>
+		<goods-list @goGoodsDetailClick="goGoodsDetail" :goodsList="goodsList"></goods-list>
 		<view class="isOver" v-if="!hasMore">------我是有底线的------</view>
 	</view>
 </template>
@@ -35,6 +35,11 @@
 				callBack && callBack();
 				this.goodsList = [...this.goodsList,...res.message];
 			},
+			goGoodsDetail (id) {
+				uni.navigateTo({
+					url:`/pages/goods-detail/index?id=${id}`
+				})
+			}
 		},
 		onReachBottom() {
 			if(this.hasMore){

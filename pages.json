@@ -32,6 +32,16 @@
 				"navigationBarTitleText": "咨询"
 			}
 		},{
+			"path": "pages/new-detail/index",
+			"style": {
+				"navigationBarTitleText": "咨询详情"
+			}
+		},{
+			"path": "pages/goods-detail/index",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},{
 			"path": "pages/member/index",
 			"style": {
 				"navigationBarTitleText": "会员"
